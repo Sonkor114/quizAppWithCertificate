@@ -317,7 +317,7 @@ doc.text('AbdinourSonkor', 40, 200);
 doc.setFontSize(12);
 doc.setTextColor(128, 0, 0);
 doc.setFont(undefined, 'bolditalic');
-doc.text('Official Quiz Authority\nDigital Stamp', 245, 190, { align: 'center' });
+doc.text('Official Quiz Authority\n', 245, 190, { align: 'center' });
 
 
     doc.save(`${username.replace(/\s+/g, '_')}_Ramadan_Quiz_Certificate.pdf`);
