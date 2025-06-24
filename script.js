@@ -311,13 +311,13 @@ doc.setTextColor(0, 0, 0);
 doc.setFont(undefined, 'italic');
 doc.text('Signed by:', 40, 190);
 doc.setFont(undefined, 'bold');
-doc.text('AbdinourSonkor', 40, 200);
+doc.text('Sonkor', 40, 200);
 
 // Stamp (simulated text)
 doc.setFontSize(12);
 doc.setTextColor(128, 0, 0);
 doc.setFont(undefined, 'bolditalic');
-doc.text('Official Quiz Authority\n', 245, 190, { align: 'center' });
+doc.text('Official Quiz Authority\nby @sonkor', 245, 190, { align: 'center' });
 
 
     doc.save(`${username.replace(/\s+/g, '_')}_Ramadan_Quiz_Certificate.pdf`);
