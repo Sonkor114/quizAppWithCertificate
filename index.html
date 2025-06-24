@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>Simple Quiz</h1>
+        
+        <!-- Username input section -->
+        <div id="username-section" class="username-section">
+            <h3>Enter your full name to start:</h3>
+            <input type="text" id="username-input" placeholder="Your full name" maxlength="50">
+            <button id="start-quiz-btn" class="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz" id="quiz-section" style="display: none;">
+            <h2 id="question">question goes here</h2>
+            <div id="answer-button">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="text-btn"> Next</button>
+        </div>
+
+        <!-- Certificate section -->
+        <div id="certificate-section" class="certificate" style="display: none;">
+            <h3>🎓 Your Certificate</h3>
+            <div id="certificate-preview">
+                <div class="certificate-content">
+                    <h2>Certificate of Achievement</h2>
+                    <div class="certificate-border"></div>
+                    <p class="certificate-text">This is to certify that</p>
+                    <h3 id="cert-name" class="certificate-name"></h3>
+                    <p class="certificate-text">has successfully completed the Ramadan Quiz</p>
+                    <p class="certificate-text">with a score of</p>
+                    <h4 id="cert-score" class="certificate-score"></h4>
+                    <p class="certificate-congrats">Congratulations on your achievement!</p>
+                    <p class="certificate-date" id="cert-date"></p>
+                </div>
+            </div>
+            <button id="download-certificate-btn" class="start-btn">Download Certificate</button>
+        </div>
+
+        <!-- Leaderboard section -->
+        <div id="leaderboard-section" class="leaderboard" style="display: none;">
+            <h3>🏆 Top Scores</h3>
+            <div id="leaderboard-list"></div>
+            <button id="view-leaderboard-btn" class="start-btn">View Leaderboard</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
